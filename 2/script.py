@@ -10,10 +10,9 @@ stop_words = set(stopwords.words('russian'))
 
 directory = os.fsencode(r'C:\Users\Dilyara\Desktop\2023_ITIS_IS_11-907_AskhadullinaDM\1\texts')
 
-patterns = "[^а-яА-Я]+"
+patterns = "[^а-яА-ЯёЁ]+"
 
 morph = MorphAnalyzer()
-
 
 def lemmatize(doc):
     doc = re.sub(patterns, ' ', doc)
