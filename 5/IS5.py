@@ -96,7 +96,7 @@ def search(query):
     for index in searched_indices:
         doc_id, tf_idf = index
 
-        print("Index: {}  Косинустное расстояние:{}".format(doc_id, tf_idf))
+        print("Index: {}  Косинусное расстояние:{}".format(doc_id, tf_idf))
 
 search(input())
 
